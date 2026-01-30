@@ -117,6 +117,22 @@
       color: #fff;
     }
   </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Plumber",
+  "name": "Hudor Systems Plumbing",
+  "areaServed": "Gwinnett County, GA",
+  "priceRange": "$150 per hour",
+  "url": "https://www.hudorsystemsplumbing.com",
+  "serviceOffered": [
+    {"@type":"Service","name":"Emergency Plumbing","price":"$150/hr"},
+    {"@type":"Service","name":"Water Heater Repair"},
+    {"@type":"Service","name":"Water Heater Installation"},
+    {"@type":"Service","name":"Drain Cleaning"}
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -156,6 +172,7 @@
 </section>
 
 <section id="pricing">
+  <!-- Yelp Conversion Optimized Pricing Section -->
   <h2>Upfront Pricing & Service Rates</h2>
   <div class="about">
     <p><strong>Straightforward pricing designed for Yelp customers.</strong> We charge a clear hourly rate with realistic time ranges, so you know what to expect before work begins.</p>
@@ -185,8 +202,25 @@
 
   <div class="about" style="margin-top:40px;">
     <p><strong>Yelp Pricing Promise:</strong> No surprise charges. We explain the scope, time estimate, and pricing before starting any work.</p>
+    <p style="font-size:13px;color:#6b7280;max-width:800px;margin:10px auto;"><strong>Pricing Disclaimer:</strong> All prices shown are estimates based on typical projects. Actual pricing may vary depending on site conditions, system requirements, code compliance, parts availability, and job complexity. Final pricing is confirmed before work begins.</p>
+    <a href="#schedule" class="cta cta-yelp">💬 Get Exact Quote</a>
     <a href="/Hudor-Systems-Plumbing-Price-Guide.pdf" class="cta cta-yelp" download>⬇️ Download Full Price Guide (PDF)</a>
     <p style="font-size:13px;color:#6b7280;margin-top:10px;">PDF includes service breakdowns, water heater options, and common repair timelines.</p>
+  </div>
+</section>
+
+<section id="water-heaters">
+  <h2>Water Heater Specialists – Installation & Repair</h2>
+  <div class="about">
+    <p><strong>Looking for water heater service after finding us on Yelp?</strong> Hudor Systems Plumbing specializes in residential and commercial water heater repair, replacement, and installation.</p>
+    <p>We service tank, tankless, gas, electric, and high-capacity commercial systems. Our licensed technicians explain options clearly and provide upfront estimates before work begins.</p>
+    <ul style="text-align:left;max-width:700px;margin:20px auto;font-size:16px;">
+      <li>✔ Same-day water heater repair available</li>
+      <li>✔ Energy-efficient replacement options</li>
+      <li>✔ Code-compliant installations</li>
+      <li>✔ Trusted by Yelp customers across Gwinnett County</li>
+    </ul>
+    <a href="#schedule" class="cta cta-yelp">🔥 Get Water Heater Quote</a>
   </div>
 </section>
 
@@ -201,15 +235,25 @@
   <h2>Schedule an Appointment</h2>
   <div class="about">
     <p>Request plumbing service and we’ll get back to you as soon as possible.</p>
-    <form action="mailto:your@email.com" method="post" enctype="text/plain" style="max-width:500px;margin:auto;text-align:left;">
+    <form action="https://formspree.io/f/yourFormID" method="POST" style="max-width:500px;margin:auto;text-align:left;">
       <label>Name</label><br>
-      <input type="text" required style="width:100%;padding:12px;margin-bottom:10px;border-radius:8px;border:1px solid #ccc;" />
+      <input type="text" name="name" required style="width:100%;padding:12px;margin-bottom:10px;border-radius:8px;border:1px solid #ccc;" />
       <label>Phone</label><br>
-      <input type="tel" required style="width:100%;padding:12px;margin-bottom:10px;border-radius:8px;border:1px solid #ccc;" />
+      <input type="tel" name="phone" required style="width:100%;padding:12px;margin-bottom:10px;border-radius:8px;border:1px solid #ccc;" />
       <label>Email</label><br>
-      <input type="email" style="width:100%;padding:12px;margin-bottom:10px;border-radius:8px;border:1px solid #ccc;" />
-      <label>Service Needed</label><br>
-      <textarea rows="4" style="width:100%;padding:12px;margin-bottom:20px;border-radius:8px;border:1px solid #ccc;"></textarea>
+      <input type="email" name="email" style="width:100%;padding:12px;margin-bottom:10px;border-radius:8px;border:1px solid #ccc;" />
+      <label>Service Type</label><br>
+      <select name="service" required style="width:100%;padding:12px;margin-bottom:10px;border-radius:8px;border:1px solid #ccc;">
+        <option value="">Select a Service</option>
+        <option>Emergency Plumbing</option>
+        <option>Water Heater Repair</option>
+        <option>Water Heater Replacement</option>
+        <option>Drain Cleaning</option>
+        <option>Leak Detection</option>
+        <option>Commercial Plumbing</option>
+      </select>
+      <label>Describe the Issue</label><br>
+      <textarea name="message" rows="4" style="width:100%;padding:12px;margin-bottom:20px;border-radius:8px;border:1px solid #ccc;"></textarea>
       <button type="submit" class="cta" style="border:none;cursor:pointer;">Request Appointment</button>
     </form>
   </div>
@@ -223,3 +267,4 @@
 
 </body>
 </html>
+
